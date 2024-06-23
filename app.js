@@ -5,6 +5,7 @@ let choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
 let userScorePara = document.querySelector("#user-score");
 let compScorePara = document.querySelector("#comp-score");
+let newGame = document.querySelector("#new-btn");
 
 const genCompChoice = () => {
     let options = ["rock", "paper", "scissor"];
@@ -69,4 +70,8 @@ choices.forEach((choice) => {
         const userChoice = choice.getAttribute("id");
         playGame(userChoice);
     })
+});
+
+newGame.addEventListener("click", () => {
+    window.location.reload();
 });

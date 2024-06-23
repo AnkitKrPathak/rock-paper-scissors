@@ -50,4 +50,19 @@ h1 {
     color: #05445E;
 }
 
+.new-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    
+}
 
+#new-btn {
+    background-color: #05445E;
+    color: #189AB4;
+    width: 6.5rem;
+    padding: 0.4rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+}
